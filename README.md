@@ -2,6 +2,8 @@
 
 Exit / Close / Kill / shutdown your react native app. Does not invoke a crash notification.
 
+![Example](https://user-images.githubusercontent.com/12546974/225411841-2a25a50a-e0db-4517-88f6-0e5d2d4405ca.gif)
+
 ## Installation
 
 ```sh
