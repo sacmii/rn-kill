@@ -24,6 +24,12 @@ const RnKill = RnKillModule
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return RnKill.multiply(a, b);
+function kill(): void {
+  return RnKill.kill();
 }
+
+const RNKill = {
+  exitApp: kill,
+};
+
+export default RNKill;

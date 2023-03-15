@@ -1,4 +1,4 @@
-# rn-kill
+# rn-kill :bomb:
 
 Exit / Close / Kill / shutdown your react native app. Does not invoke a crash notification.
 
@@ -11,11 +11,11 @@ npm install rn-kill
 ## Usage
 
 ```js
-import { multiply } from 'rn-kill';
+import RNKill from 'rn-kill';
 
 // ...
 
-const result = await multiply(3, 7);
+RNKill.exitApp();
 ```
 
 ## Contributing

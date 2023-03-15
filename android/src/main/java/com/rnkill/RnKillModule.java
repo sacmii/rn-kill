@@ -20,10 +20,9 @@ public class RnKillModule extends RnKillSpec {
   }
 
 
-  // Example method
   // See https://reactnative.dev/docs/native-modules-android
   @ReactMethod
-  public void multiply(double a, double b, Promise promise) {
-    promise.resolve(a * b);
+  public void kill() {
+    android.os.Process.killProcess(android.os.Process.myPid());
   }
 }

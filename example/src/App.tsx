@@ -1,18 +1,15 @@
 import * as React from 'react';
-
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'rn-kill';
+import { StyleSheet, View, Button } from 'react-native';
+import RNKill from 'rn-kill';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+  const onPress = () => {
+    RNKill.exitApp();
+  };
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Button title="Kill the application" onPress={onPress} />
     </View>
   );
 }
